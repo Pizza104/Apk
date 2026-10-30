@@ -1,12 +1,12 @@
 {
   "expo": {
-    "name": "app-variaveis-botoes",
+    "name": "Rotina em Dia",
     "slug": "app-variaveis-botoes",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "appvariaveisbotoes",
-    "userInterfaceStyle": "automatic",
+    "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true

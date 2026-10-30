@@ -1,50 +1,31 @@
-# Welcome to your Expo app 👋
+# Rotina em Dia
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Um app de organização de estudos feito com Expo, React Native e Expo Router. A antiga tela de demonstração de botões foi ampliada para uma lista funcional de tarefas com acompanhamento de progresso.
 
-## Get started
+## Funcionalidades
 
-1. Install dependencies
+- Criar tarefas e classificá-las como **Estudo**, **Pessoal** ou **Trabalho**.
+- Marcar tarefas como concluídas ou reabri-las, e excluir itens.
+- Filtrar a lista por todas, pendentes ou concluídas.
+- Ver o progresso geral, resumo por categoria e atividade dos últimos sete dias.
+- Manter a lista salva no próprio dispositivo com AsyncStorage, inclusive após fechar e abrir o app.
+- Interface responsiva para Android, iOS e web.
 
-   ```bash
-   npm install
-   ```
+## Executar
 
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+Requer Node.js e npm. Na pasta do projeto:
 
 ```bash
-npm run reset-project
+npm install
+npx expo start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Use os atalhos do Expo para abrir o app no Android, iOS ou navegador. Para abrir diretamente a versão web:
 
-## Learn more
+```bash
+npm run web
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+## Privacidade e escopo
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Os dados das tarefas são armazenados localmente no dispositivo; não existe conta, sincronização na nuvem ou servidor. Remover os dados do app/navegador pode apagar a lista. O projeto não envia tarefas para terceiros.
