@@ -26,6 +26,19 @@ Use os atalhos do Expo para abrir o app no Android, iOS ou navegador. Para abrir
 npm run web
 ```
 
+## Publicar na Vercel
+
+O projeto está configurado para exportação web estática do Expo Router. Para testar o build localmente:
+
+```bash
+npm ci
+npm run build:web
+```
+
+O site gerado fica na pasta `dist/`. Para publicar, importe este repositório na Vercel e mantenha a raiz do projeto na pasta que contém este `package.json`. O arquivo `vercel.json` define o comando de build, a pasta de saída e URLs sem a extensão `.html`; não é necessário configurar uma API ou servidor Node.
+
+As tarefas continuam salvas localmente no navegador de cada usuário e não são compartilhadas entre dispositivos ou navegadores.
+
 ## Privacidade e escopo
 
 Os dados das tarefas são armazenados localmente no dispositivo; não existe conta, sincronização na nuvem ou servidor. Remover os dados do app/navegador pode apagar a lista. O projeto não envia tarefas para terceiros.
